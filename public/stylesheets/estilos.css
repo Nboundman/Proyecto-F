@@ -1,0 +1,331 @@
+/*font-family: 'Open Sans', sans-serif;*/
+body {
+    font-family: 'Open Sans', sans-serif;
+    ;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+/*header*/
+header {
+    background: #0b0361;
+    background: linear-gradient(292deg, #0b0361 0%, #7593ff 80%);
+    background: -webkit-linear-gradient(292deg, #0b0361 0%, #7593ff 80%);
+    background: -moz-linear-gradient(292deg, #0b0361 0%, #7593ff 80%);
+    padding: 16px-0;
+}
+
+header h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: 800;
+    display: inline-block;
+    position: relative;
+    bottom: 80px;
+    margin-left: 10px;
+}
+
+header div img {
+    height: 200px;
+    padding: 10px;
+    width: 25%;
+}
+
+.holder {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+/*header*/
+
+/*navegacion*/
+nav {
+    background: #0b0361;
+    background: linear-gradient(292deg, #0b0361 0%, #7593ff 80%);
+    background: -webkit-linear-gradient(292deg, #0b0361 0%, #7593ff 80%);
+    background: -moz-linear-gradient(292deg, #0b0361 0%, #7593ff 80%);
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    flex-grow: 1;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 3px 6px;
+    display: block;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: rgb(0, 0, 0, 0.3);
+}
+
+nav ul li a.activo {
+    background-color: #0b0361;
+
+}
+
+/*navegacion*/
+
+/*main*/
+.hh {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+h2 {
+    color: #2e64a1;
+    font-weight: 400;
+}
+
+.informacion {
+    width: 70%;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.ejemplo {
+    width: 30%;
+}
+
+.ejemplo .correo {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 22px;
+    display: block;
+    /*<-etiqueta importante para que no esten en la misma linea*/
+}
+
+.ejemplo2 {
+    background-color: #0b0361;
+    padding: 16px;
+}
+
+.ejemplo2 .telefono {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 22px;
+    display: block;
+    /*<-etiqueta importante para que no esten en la misma linea*/
+}
+
+.columnas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.informacion p {
+    font-size: 25px;
+}
+
+/*main*/
+
+/*footer*/
+footer {
+    background-color: whitesmoke;
+    clear: both;
+    color: #333;
+    text-align: center;
+    padding: 5px 0;
+    /*5px = 3rem 0*/
+    margin-top: 20px;
+}
+
+/*footer*/
+
+/*Estyle Remeras*/
+.info p {
+    font-size: 25px;
+    /*0.7rem*/
+}
+
+.remera {
+    background-color: #2e64a1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 18%;
+    text-align: center;
+    padding: 13px;
+    box-sizing: border-box;
+}
+
+.remeras {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.remera img {
+    border-radius: 40%;
+    max-width: 60%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.remera h5,
+.remera h6,
+.remera p {
+    margin: 0;
+    font-weight: normal;
+    color: #333;
+}
+
+.remera p {
+    font-style: italic;
+    font: 200;
+    color: whitesmoke;
+}
+
+/*Estyle Remeras*/
+
+/*Estyle pantalones*/
+.img5 {
+    background-color: #333;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+
+}
+
+.fbox {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.pantalones {
+    background-color: #2e64a1;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 5px 0;
+    gap: 32px;
+    /*espacio entre la imagen y letra*/
+    align-items: center;
+    width: 50%;
+}
+
+.pantalones .info h4 {
+    color: whitesmoke;
+    font-weight: 500;
+    font-style: italic;
+    border-bottom: 1px solid whitesmoke;
+    padding-bottom: 10px;
+}
+
+.pantalones .info p {
+    font-size: 20px;
+    line-height: 19px;
+}
+
+.pantalones img {
+    border-radius: 13px;
+    max-width: 225px;
+}
+
+.pantalones:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+/*style pantalones*/
+
+/*Estyle zapatillas*/
+
+.zapatillas img {
+    border: 1px solid rgb(202, 39, 39);
+    padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-right: 2%;
+    width: 150px;
+}
+
+.zapatillas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+/*style zapatillas*/
+
+/*Style contacto*/
+
+.contacto {
+    display: flex;
+    gap: 24px;
+}
+
+.contacto div {
+    width: 100%;
+}
+
+.datos p {
+    font-size: 20px;
+}
+
+.datos ul li {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.formulario p {
+    display: flex;
+}
+
+.formulario p label {
+    min-width: 80px;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.formulario p input,
+.formulario p textarea {
+    width: 100%;
+    background: #ddd;
+    border-radius: 5px;
+    border: 1px solid #999;
+    font-size: 14px;
+    padding: 6px 10px;
+}
+
+.formulario textarea {
+    resize: none;
+    /*que no se agrande el cuadro de msj*/
+    height: 150px;
+}
+
+.formulario p:nth-child(4) {
+    align-items: start;
+}
+
+.formulario input[type="submit"] {
+    background: #6da9ed;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    color: white;
+    font-size: 16px;
+    padding: 6px 20px;
+    width: auto;
+    position: relative;
+    left: 94px;
+    cursor: pointer;
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: #2e64a1;
+}
+
+div ul li {
+    column-gap: 100px;
+}
+
+/*Style contacto*/
