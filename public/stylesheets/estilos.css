@@ -1,14 +1,13 @@
-/*font-family: 'Open Sans', sans-serif;*/
+    
 body {
     font-family: 'Open Sans', sans-serif;
     ;
     font-size: 20px;
     line-height: 20px;
 }
-
-/*header*/
+ 
 header {
-    background: #0b0361;
+    background: #0b0361;        
     background: linear-gradient(292deg, #0b0361 0%, #7593ff 80%);
     background: -webkit-linear-gradient(292deg, #0b0361 0%, #7593ff 80%);
     background: -moz-linear-gradient(292deg, #0b0361 0%, #7593ff 80%);
@@ -23,27 +22,100 @@ header h1 {
     position: relative;
     bottom: 80px;
     margin-left: 10px;
+    font-family: 'Rubik Mono One', sans-serif;
+    color: whitesmoke;
 }
 
 header div img {
     height: 200px;
     padding: 10px;
-    width: 25%;
+    width: 60%;
+    position: relative;
+    left: 190px;
+    -webkit-box-shadow: inset 0px 0px 37px 31px rgba(34,0,255,0.46);
+    -moz-box-shadow: inset 0px 0px 37px 31px rgba(34,0,255,0.46);
+    box-shadow: inset 0px 0px 37px 31px rgba(34,0,255,0.46);
+}
+header div h1 {
+    margin-top: 10px;
+    top: 5px;
+    position: relative;
+    left: 70px;
 }
 
 .holder {
     max-width: 1024px;
-    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 700px) and (min-width: 250px){
+    header div img {
+        position: relative;
+        height: 280px;
+        padding: 10px;
+        width: 100%;
+        padding-top: 10px;
+        left: -5px;
+    }
+    header div h1 {
+        text-align: center;
+        font-size: 50px;
+        left: -5px;
+    }
 }
 
 /*header*/
+@media screen and (max-width: 700px) and (min-width: 250px){
+.i {
+    display: flex;
+    flex-wrap: wrap;
+}
+.i2 div img {
+    height: 350px;
+    width: 250px;
+    filter: grayscale(59%) sepia(9%) brightness(143%);
+    -webkit-filter: grayscale(59%) sepia(9%) brightness(143%);
+    -moz-filter: grayscale(59%) sepia(9%) brightness(143%);
+    border-radius: 18px 18px 18px 18px;
+    -webkit-border-radius: 18px 18px 18px 18px;
+    -moz-border-radius: 18px 18px 18px 18px;
+    border: 4px solid black;
+} 
+
+}
+
+.i {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.indeximg {
+height: 350px;
+width: 500px;
+filter: grayscale(59%) sepia(9%) brightness(143%);
+-webkit-filter: grayscale(59%) sepia(9%) brightness(143%);
+-moz-filter: grayscale(59%) sepia(9%) brightness(143%);
+border-radius: 18px 18px 18px 18px;
+-webkit-border-radius: 18px 18px 18px 18px;
+-moz-border-radius: 18px 18px 18px 18px;
+border: 4px solid black;
+}
+
+.h2index {
+    text-align: center;
+}
+
+.de {
+    text-align: justify;
+}
 
 /*navegacion*/
 nav {
-    background: #0b0361;
-    background: linear-gradient(292deg, #0b0361 0%, #7593ff 80%);
-    background: -webkit-linear-gradient(292deg, #0b0361 0%, #7593ff 80%);
-    background: -moz-linear-gradient(292deg, #0b0361 0%, #7593ff 80%);
+    background: #e3e2ec;
+    background: linear-gradient(292deg, #0b0361 0%, #0b52b4f3 80%);
+    background: -webkit-linear-gradient(292deg, #0b0361 0%, #0b52b4f3 80%);
+    background: -moz-linear-gradient(292deg, #0b0361 0%, #0b52b4f3 80%);
     margin-bottom: 20px;
 }
 
@@ -61,8 +133,8 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 3px 6px;
-    display: block;
+    padding: 8px 6px;
+    display: flex;
     text-align: center;
 }
 
@@ -71,21 +143,20 @@ nav ul li a:hover {
 }
 
 nav ul li a.activo {
-    background-color: #0b0361;
-
+    background-color: #d2d2d2;
 }
 
 /*navegacion*/
 
 /*main*/
-.hh {
-    position: relative;
-    max-width: 100%;
-    max-height: 100%;
+.main h2 {
+    font-size: 40px;
+    bottom: 10px;
+    font-family: 'Dancing Script', cursive;
 }
 
 h2 {
-    color: #2e64a1;
+    color: #1161ca;
     font-weight: 400;
 }
 
@@ -120,9 +191,23 @@ h2 {
     /*<-etiqueta importante para que no esten en la misma linea*/
 }
 
+@media screen and (max-width: 700px) and (min-width: 250px){
+                .de {
+                    position: relative;
+                    left: 5px;
+                }
+                .box2 {
+                    position: relative;
+                    left: 15px;
+                }
+
+}
+
 .columnas {
     display: flex;
+    text-align: center;
     justify-content: space-between;
+    margin-top: 20px;
 }
 
 .informacion p {
@@ -144,124 +229,424 @@ footer {
 
 /*footer*/
 
-/*Estyle Remeras*/
+/*Estyle Remeras*/ 
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+    .seccionremeras h2 {
+        display: flex;
+        position: relative;
+        right: 250px;
+        left: 390px;
+        bottom: 10px;
+        font-family: 'Dancing Script', cursive;
+    }
+    .seccionremeras {
+        position: relative;
+        right: 20px;
+    }
+    
+}    
+
+.seccionremeras {
+    text-align: center ;
+}
+
 .info p {
     font-size: 25px;
     /*0.7rem*/
 }
 
 .remera {
-    background-color: #2e64a1;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 18%;
+    background-color: white;
+    border: 1px solid rgb(4, 4, 4);
+    border-radius: 5px;    
     text-align: center;
-    padding: 13px;
+    width: 35%;
+    padding:  13px;
     box-sizing: border-box;
+    position: relative;
+    left: 55px;
 }
 
 .remeras {
+    text-align: center;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    left: 255px;
+    position: relative;
 }
 
 .remera img {
-    border-radius: 40%;
+    border-radius: 20%;
     max-width: 60%;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 89px 105px rgba(104,73,73,0.16);
+-webkit-box-shadow: 0px 0px 89px 105px rgba(104,73,73,0.16);
+-moz-box-shadow: 0px 0px 89px 105px rgba(104,73,73,0.16);
+filter: sepia(16%) brightness(116%) saturate(137%) contrast(89%);
+-webkit-filter: sepia(16%) brightness(116%) saturate(137%) contrast(89%);
+-moz-filter: sepia(16%) brightness(116%) saturate(137%) contrast(89%);
 }
 
 .remera h5,
 .remera h6,
 .remera p {
-    margin: 0;
-    font-weight: normal;
-    color: #333;
+    color: rgb(4, 4, 4);
+    margin-top: 10px;
+    font-family: 'Crimson Text', serif;
+    font-size: 22px;
+    position: relative;
+    text-align: center;
 }
 
-.remera p {
-    font-style: italic;
-    font: 200;
-    color: whitesmoke;
+.h2r {
+    display: flex;
+    position: relative;
+    font-size: 40px;
 }
+.seccionremeras h2 {
+    left: 400px;
+}
+
+@media screen and (max-width: 700px) and (min-width: 250px){
+    .remeras {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        position: relative;
+        left: 5px;
+    }
+
+    .remera {
+        background-color: white;
+        border: 1px solid rgb(4, 4, 4);
+        border-radius: 5px;
+        width: 90%;
+        padding: 13px;
+        box-sizing: border-box;
+        position: relative;
+        justify-content: flex-start;
+        left: 20px;
+    }
+    .seccionremeras h2 {
+        display: flex;
+        left: 20px;
+        font-size: 60px;
+    }
+
+}
+
 
 /*Estyle Remeras*/
 
-/*Estyle pantalones*/
-.img5 {
-    background-color: #333;
-    border: 1px solid #ccc;
-    border-radius: 15px;
-
+/*Estyle buzos*/
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+    .seccionbuzos h2 {
+        display: flex;
+        position: relative;
+        right: 250px;
+        left: 420px;
+        font-size: 40px;
+        bottom: 10px;
+        font-family: 'Dancing Script', cursive;
+    }
+    .seccionbuzos {
+        position: relative;
+        right: 20px;
+    }
+    
+}    
+.seccionbuzos {
+    text-align: center ;
 }
 
-.fbox {
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+.info p {
+    font-size: 25px;
+    /*0.7rem*/
+}
+.buzo {
+    background-color: white;
+    border: 1px solid rgb(4, 4, 4);
+    border-radius: 5px;
+    width: 35%;
+    text-align: center;
+    padding: 13px;
+    box-sizing: border-box;
+    position: relative;
+    left: 55px;
 }
 
-.pantalones {
-    background-color: #2e64a1;
-    border: 1px solid #ccc;
-    border-radius: 15px;
-    padding: 5px;
-    margin: 5px 0;
-    gap: 32px;
-    /*espacio entre la imagen y letra*/
-    align-items: center;
-    width: 50%;
+.buzos {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    left: 255px;
+    position: relative;
 }
 
-.pantalones .info h4 {
-    color: whitesmoke;
-    font-weight: 500;
-    font-style: italic;
-    border-bottom: 1px solid whitesmoke;
-    padding-bottom: 10px;
+.buzo img {
+    border-radius: 20%;
+    max-width: 60%;
+    box-shadow: 0px 0px 89px 105px rgba(104,73,73,0.16);
+-webkit-box-shadow: 0px 0px 89px 105px rgba(104,73,73,0.16);
+-moz-box-shadow: 0px 0px 89px 105px rgba(104,73,73,0.16);
+filter: sepia(16%) brightness(116%) saturate(137%) contrast(89%);
+-webkit-filter: sepia(16%) brightness(116%) saturate(137%) contrast(89%);
+-moz-filter: sepia(16%) brightness(116%) saturate(137%) contrast(89%);
 }
 
-.pantalones .info p {
-    font-size: 20px;
-    line-height: 19px;
+.buzo h5,
+.buzo h6,
+.buzo p {
+    color: rgb(4, 4, 4);
+    margin-top: 10px;
+    font-family: 'Crimson Text', serif;
+    font-size: 22px;
+    position: relative;
+    text-align: center;
 }
+@media screen and (max-width: 700px) and (min-width: 250px){
+    .buzos {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        position: relative;
+        left: 5px;
+    }
 
-.pantalones img {
-    border-radius: 13px;
-    max-width: 225px;
-}
-
-.pantalones:nth-child(even) {
-    flex-direction: row-reverse;
+    .buzo {
+        background-color: white;
+        border: 1px solid rgb(4, 4, 4);
+        border-radius: 5px;
+        width: 90%;
+        padding: 13px;
+        box-sizing: border-box;
+        position: relative;
+        justify-content: flex-start;
+        left: 20px;
+    }
+    .seccionbuzos h2 {
+        display: flex;
+        left: 20px;
+        font-size: 60px;
+    }
 }
 
 /*style pantalones*/
 
 /*Estyle zapatillas*/
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+    .seccionzapatillas h2 {
+        display: flex;
+        position: relative;
+        right: 250px;
+        left: 400px;
+        bottom: 10px;
+        font-family: 'Dancing Script', cursive;
+    }
+    .seccionzapatillas {
+        position: relative;
+        right: 20px;
+    }
+    
+}  
+.seccionzapatillas h2 {
+    position: relative;
+    right: 20px;
+    font-size: 40px;
 
-.zapatillas img {
-    border: 1px solid rgb(202, 39, 39);
-    padding: 5px;
+}
+
+.seccionzapatillas {
+    text-align: center ;
+}
+
+.info p {
+    font-size: 25px;
+    /*0.7rem*/
+}
+
+.zapatilla {
+    background-color: white;
+    border: 1px solid rgb(4, 4, 4);
+    border-radius: 5px;
+    width: 35%;
+    text-align: center;
+    padding: 13px;
     box-sizing: border-box;
-    margin-bottom: 20px;
-    margin-right: 2%;
-    width: 150px;
+    position: relative;
+    left: 55px;
 }
 
 .zapatillas {
+    text-align: center;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    flex-direction: column;
+    position: relative;
+    left: 255px;
+}
+
+.zapatilla img {
+    border-radius: 20%;
+    max-width: 60%;
+    box-shadow: 0px 0px 89px 105px rgba(104,73,73,0.16);
+-webkit-box-shadow: 0px 0px 89px 105px rgba(104,73,73,0.16);
+-moz-box-shadow: 0px 0px 89px 105px rgba(104,73,73,0.16);
+filter: sepia(16%) brightness(116%) saturate(137%) contrast(89%);
+-webkit-filter: sepia(16%) brightness(116%) saturate(137%) contrast(89%);
+-moz-filter: sepia(16%) brightness(116%) saturate(137%) contrast(89%);
+}
+
+.zapatilla h5,
+.zapatilla h6,
+.zapatilla p {
+    color: rgb(4, 4, 4);
+    margin-top: 10px;
+    font-family: 'Crimson Text', serif;
+    font-size: 22px;
+    position: relative;
+    text-align: center;
+}
+@media screen and (max-width: 700px) and (min-width: 250px){
+    .zapatillas {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        position: relative;
+        left: 5px;
+    }
+
+    .zapatilla {
+        background-color: white;
+        border: 1px solid rgb(4, 4, 4);
+        border-radius: 5px;
+        width: 90%;
+        padding: 13px;
+        box-sizing: border-box;
+        position: relative;
+        justify-content: flex-start;
+        left: 20px;
+    }
+    .seccionzapatillas h2 {
+        display: flex;
+        left: 20px;
+        font-size: 60px;
+    }
+
 }
 
 /*style zapatillas*/
 
 /*Style contacto*/
+#li {
+    position: relative;
+    right: 30px;
+}
+#li{
+     margin-top: 20px;
+}
+.datos{
+     width: 50%;
+     left: 50px;
+     position: relative;
+
+}
+
+@media screen and (max-width: 700px) and (min-width: 250px){
+                  .holdercontacto {
+                          display: flex;
+                          flex-direction: column;
+                          position: relative;
+                          top: 5px;
+                  }
+                  ul p {
+                    position: relative;
+                    right: 15px;
+                  }
+                  .contactorapido{
+                    position: relative;
+                    left: 15px;
+                  }
+                  .contactorapido h2 {
+                    margin-bottom: 15px;
+                    font-size: 25px;
+                  }
+                  .contactorapido form {
+                    width: 250px;
+                  }
+                  .contactorapido form p label {
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    font-size: 25px;
+                    margin-left: -5px;
+                  }
+                  .contactorapido form p input{
+                    right: 20px;
+                    position: relative;
+                    left: 25px;
+                  }
+                  .contactorapido form p textarea {
+                    position: relative;
+                    left: 25px;
+                  }
+                  .acciones{
+                    position: relative;
+                    left: 25px;
+                  }
+                  .datos {
+                    top: 15px;
+                    left: 15px;
+                  }
+                  .datos h2 {
+                    font-size: 25px;
+                  }
+                  .font {
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                  }
+                  .c {
+                    position: relative;
+                    font-size: 30px;
+                  }
+                  #li {
+                    position: relative;
+                    right: 20px;
+                  }
+                  
+}
+.c {
+   margin-left: 40%;
+   left: 30px;
+   position: relative;
+   font-size: 40px;
+   font-family: 'Dancing Script', cursive;
+}
+
+.font, .contactorapido form p label {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contactorapido h2, .datos h2 {
+    padding-bottom: 20px;
+}
+
+.datos ul li {
+    position: relative;
+    right: 14px;
+}
+
+.holdercontacto {
+    display: flex;
+    margin-left: 50px;
+}
+
+.contactorapido {
+      width: 50%;
+
+}
 
 .contacto {
     display: flex;
-    gap: 24px;
+    gap: 14px;
 }
 
 .contacto div {
@@ -328,4 +713,24 @@ div ul li {
     column-gap: 100px;
 }
 
-/*Style contacto*/
+@media screen and (max-width: 700px) and (min-width: 250px){
+footer p {
+     position: relative;
+     left: 5px;
+}
+}
+
+.footer {
+    position: relative;
+    right: 50px;
+    font-family: 'Allerta Stencil', sans-serif;
+}
+ .novedades {
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+
+ }
+ .novedades2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+ 

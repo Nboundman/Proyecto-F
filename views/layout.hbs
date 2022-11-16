@@ -6,10 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HEYHOYSTORE</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,300&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="/stylesheets/normalize.css">
   <link rel="stylesheet" href="/stylesheets/estilos.css">
 </head>
@@ -17,18 +22,17 @@
 <body>
   <header>
     <div class="holder">
-      <!--holder(contenedor)clase nueva-->
-      <img src="images/header.jpg" alt="hhs">
-      <h1>HEY HO STUDIO</h1>
+      <img src="images/header.jpg" alt="header">
+      <h1>Hey Ho Estudio de tatuajes y piercings</h1>
     </div>
   </header>
-  <!--estructura principal/cabecera-->
+
   <nav>
-    <!--navegacion trabaja con <ul>y<li>-->
+
     <ul class="holder">
       <li><a class="{{#if isNosotros}}activo{{/if}}" href="/">NOSOTROS</a></li>
       <li><a class="{{#if isRemeras}}activo{{/if}}" href="/remeras">REMERAS</a></li>
-      <li><a class="{{#if isPantalones}}activo{{/if}}" href="/pantalones">PANTALONES</a></li>
+      <li><a class="{{#if isPantalones}}activo{{/if}}" href="/pantalones">ABRIGOS</a></li>
       <li><a class="{{#if isZapatillas}}activo{{/if}}" href="/zapatillas">ZAPATILLAS</a></li>
       <li><a class="{{#if isNovedades}}activo{{/if}}" href="/novedades">NOVEDADES</a></li>
       <li><a class="{{#if isContacto}}activo{{/if}}" href="/contacto">CONTACTO</a></li>
@@ -38,8 +42,11 @@
     {{{body}}}
   </main>
   <footer>
-    <p>diseñado por Boundman</p>
+    <p class="footer">Diseñado por Nicolas Montania <i class="fa-solid fa-map-pin"></i></p>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
