@@ -734,3 +734,9 @@ footer p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
  }
  
+ .box2 div span {
+    position: relative;
+    right: 25px;
+    
+ }
+ 
